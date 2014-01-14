@@ -30,6 +30,7 @@ android {
 		versionCode 1
 		versionName "1.0"
 	}
+
 	buildTypes {
 		release {
 			runProguard false
@@ -37,9 +38,31 @@ android {
 		}
 	}
 
+//	signingConfigs {
+//		devConfing {
+//			storeFile file("../keystore/photify.keystore");
+//			storePassword "photify"
+//			keyAlias "photify.keystore"
+//			keyPassword "photify"
+//		}
+//		debug {
+//			storeFile file("your.keystore")
+//		}
+//	}
+//
+//	productFlavors {
+//		dev {
+//			packageName "ac.jejunu.photify"
+//			versionCode 1
+//			versionName "0.0.1"
+//			signingConfig signingConfigs.devConfing
+//		}
+//	}
+
 	lintOptions {
 		abortOnError false
 	}
+
 }
 configurations {
 	apt
@@ -51,7 +74,7 @@ dependencies {
 	compile 'com.android.support:appcompat-v7:19.0.0'
 	compile 'com.google.android.gms:play-services:4.0.30'
 
-	compile "de.greenrobot:eventbus:2.2.0"
+//	compile "de.greenrobot:eventbus:2.2.0" otto 쓸까??
 
 	apt "com.squareup.dagger:dagger-compiler:${daggerVersion}"
 	compile "com.squareup.dagger:dagger:${daggerVersion}"
