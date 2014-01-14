@@ -1,25 +1,61 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.7.+'
+	}
+}
+
 apply plugin: 'android'
 
-android {
-    compileSdkVersion 19
-    buildToolsVersion "17.0.0"
+ext.daggerVersion = '1.0.0';
+androidAnnotationsVersion = '3.1-SNAPSHOT';
 
-    defaultConfig {
-        minSdkVersion 10
-        targetSdkVersion 19
-        versionCode 1
-        versionName "1.0"
-    }
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
-    }
+repositories {
+	mavenCentral()
+	maven {
+		url 'https://oss.sonatype.org/content/repositories/snapshots/'
+	}
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion "17.0.0"
+
+	defaultConfig {
+		minSdkVersion 10
+		targetSdkVersion 19
+		versionCode 1
+		versionName "1.0"
+	}
+	buildTypes {
+		release {
+			runProguard false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+		}
+	}
+
+	lintOptions {
+		abortOnError false
+	}
+}
+configurations {
+	apt
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.0'
-    compile 'com.android.support:gridlayout-v7:19.0.0'
-    compile 'com.android.support:appcompat-v7:19.0.0'
+	compile 'com.android.support:support-v4:19.0.0'
+	compile 'com.android.support:gridlayout-v7:19.0.0'
+	compile 'com.android.support:appcompat-v7:19.0.0'
+	compile 'com.google.android.gms:play-services:4.0.30'
+
+	compile "de.greenrobot:eventbus:2.2.0"
+
+	apt "com.squareup.dagger:dagger-compiler:${daggerVersion}"
+	compile "com.squareup.dagger:dagger:${daggerVersion}"
+
+	apt "org.androidannotations:androidannotations:${androidAnnotationsVersion}"
+	compile "org.androidannotations:androidannotations-api:${androidAnnotationsVersion}"
 }
