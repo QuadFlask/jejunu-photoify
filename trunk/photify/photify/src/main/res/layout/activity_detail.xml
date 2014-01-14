@@ -8,15 +8,20 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/scrollView">
+
 		<LinearLayout
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
 			android:orientation="vertical">
+
 			<!--main image-->
-			<ImageView
+			<ac.jejunu.photify.view.UrlImageView
 				android:layout_width="fill_parent"
-				android:layout_height="250dp"
-				android:id="@+id/imageView"/>
+				android:layout_height="fill_parent"
+				android:layout_gravity="center_vertical"
+				android:scaleType="fitXY"
+				android:id="@+id/iv_mainphoto"/>
+
 			<!--info-->
 			<LinearLayout
 				android:layout_width="fill_parent"
@@ -25,6 +30,7 @@
 				android:layout_marginBottom="25dp">
 				<include layout="@layout/profile_and_text"/>
 			</LinearLayout>
+
 			<!--google map-->
 			<LinearLayout
 				android:layout_width="fill_parent"
@@ -48,12 +54,8 @@
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
 				android:orientation="vertical"
-				android:layout_marginBottom="25dp">
-				<!--TEST comment-->
-				<include layout="@layout/profile_and_text"/>
-				<include layout="@layout/profile_and_text"/>
-				<include layout="@layout/profile_and_text"/>
-				<include layout="@layout/profile_and_text"/>
+				android:layout_marginBottom="25dp"
+				android:id="@+id/ll_comments">
 			</LinearLayout>
 
 			<LinearLayout
