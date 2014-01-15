@@ -1,4 +1,4 @@
-package ac.jejunu.photify;
+package ac.jejunu.photify.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +11,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import ac.jejunu.photify.fragment.TestFragment;
+import ac.jejunu.photify.R;
+import ac.jejunu.photify.activity.fragment.TestFragment;
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
 

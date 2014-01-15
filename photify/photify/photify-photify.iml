@@ -72,11 +72,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="ComAndroidSupportGridlayoutV71900.aar" level="project" />
     <orderEntry type="library" exported="" name="ComGoogleAndroidGmsPlayServices4030.aar" level="project" />
-    <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.0.0" level="project" />
-    <orderEntry type="library" exported="" name="androidannotations-api-3.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="dagger-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="gson-1.7.2" level="project" />
     <orderEntry type="library" exported="" name="ComAndroidSupportAppcompatV71900.aar" level="project" />
+    <orderEntry type="module" module-name="fb" exported="" />
   </component>
 </module>
 

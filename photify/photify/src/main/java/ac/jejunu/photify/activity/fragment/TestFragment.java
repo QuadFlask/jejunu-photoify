@@ -1,4 +1,4 @@
-package ac.jejunu.photify.fragment;
+package ac.jejunu.photify.activity.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

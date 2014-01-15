@@ -1,7 +1,9 @@
-package ac.jejunu.photify;
+package ac.jejunu.photify.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import ac.jejunu.photify.R;
 
 public class GoogleMapTestActivity extends Activity {
 
