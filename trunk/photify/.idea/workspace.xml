@@ -2,7 +2,9 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState />
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -11,14 +13,130 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="5ce4a0e6-2cb7-402e-a8dc-75fc017d6a42" name="Default" comment="&#10;이미지 백그라운드에서 다운로드 받아 보여주기">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/UrlImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java" />
+    <list default="true" readonly="true" id="5ce4a0e6-2cb7-402e-a8dc-75fc017d6a42" name="Default" comment="Facebook SDK 포함&#10;Facebook Login 기능 구현함">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AccessToken.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AccessTokenSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/AnalyticsEvents.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AppEventsConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AppEventsLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AppLinkData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/AsyncFacebookRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/AuthorizationClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/CacheableRequestBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/CreateGraphObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/DialogError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/Facebook.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookAuthorizationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/FacebookDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookDialogException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/FacebookError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/FacebookFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookGraphObjectException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/FacebookLoginFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookOperationCanceledException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookRequestError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookSdkVersion.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/FacebookServiceException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/FbDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/FileLruCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/FriendPickerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/GetTokenClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gson_1_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphLocation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphMultiResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/GraphObjectAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/GraphObjectCursor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphObjectList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/GraphObjectPagingLoader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphPlace.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/GraphUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/HttpMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/ImageDownloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/ImageRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/ImageResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/ImageResponseCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/InsightsLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/JsonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/LegacyHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/Logger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/LoggingBehavior.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/LoginActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/LoginButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/NativeAppCallAttachmentStore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/NativeAppCallContentProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/NativeProtocol.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/NonCachingTokenCachingStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/OpenGraphAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/OpenGraphObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/PickerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/PlacePickerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/PlatformServiceClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/ProfilePictureView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/model/PropertyName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/Request.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/RequestAsyncTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/RequestBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/Response.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/ServerProtocol.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/Session.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/SessionAuthorizationType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/SessionDefaultAudience.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/SessionLoginBehavior.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/SessionState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/SessionTracker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/Settings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/SharedPreferencesTokenCachingStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/SimpleGraphObjectCursor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/TestSession.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/TokenCachingStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/UiLifecycleHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/UrlRedirectCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/UserSettingsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/android/Util.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/Utility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/Validate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/widget/WebDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/WorkQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/fb.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_1_7_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/java/com/facebook/internal/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/proguard-rules.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/GoogleMapTestActivity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/GoogleMapTestActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/MainActivity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment/TestFragment.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/r/debug/ac/jejunu/photify/R.java" afterPath="$PROJECT_DIR$/photify/build/source/r/debug/ac/jejunu/photify/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/photify/build/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/r/debug/android/support/v7/gridlayout/R.java" afterPath="$PROJECT_DIR$/photify/build/source/r/debug/android/support/v7/gridlayout/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build.gradle" afterPath="$PROJECT_DIR$/photify/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/fragment_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/photify-photify.iml" afterPath="$PROJECT_DIR$/photify/photify-photify.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment" />
     </list>
     <ignored path="photify.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,47 +200,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DetailActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java">
+      <file leaf-file-name="FacebookLoginFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/FacebookLoginFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="32" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="60" column="27" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.68833333" vertical-offset="37" max-vertical-offset="2580">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlImageView.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/UrlImageView.java">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="3" selection-start="630" selection-end="630" vertical-scroll-proportion="0.025" vertical-offset="330" max-vertical-offset="2430">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="26" selection-start="246" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_detail.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="15" selection-start="272" selection-end="272" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1275">
+            <state line="6" column="51" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile_and_text.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="384" selection-end="384" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="555">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -158,6 +259,10 @@
                 <option name="name" value=":photify" />
                 <option name="path" value="$PROJECT_DIR$/photify" />
               </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":fb" />
+                <option name="path" value="$PROJECT_DIR$/fb" />
+              </ExternalProjectPojo>
             </list>
           </value>
         </entry>
@@ -165,6 +270,363 @@
     </option>
     <option name="availableTasks">
       <map>
+        <entry key="$PROJECT_DIR$/fb">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="assembleDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a bundle containing the library in Debug." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="bundleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a bundle containing the library in Release." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="bundleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileDebugTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Build 'debug' on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="connectedInstrumentTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="copyDebugLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="copyReleaseLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="dexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateDebugTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateDebugTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="installDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeDebugProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeReleaseProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageReleaseJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageReleaseLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="preDebugTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="preDexDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:19.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV71900Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="prepareDebugTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="uninstallDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/fb" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/photify">
           <value>
             <list>
@@ -434,6 +896,11 @@
                 <option name="name" value="prepareDebugTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare photify:fb:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/photify" />
+                <option name="name" value="preparePhotifyFbUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/photify" />
                 <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
@@ -514,13 +981,22 @@
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment/TestFragment.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/MainActivity.java" />
         <option value="$PROJECT_DIR$/photify/photify-photify.iml" />
-        <option value="$PROJECT_DIR$/photify/build.gradle" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/GoogleMapTestActivity.java" />
-        <option value="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/UrlImageView.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java" />
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml" />
+        <option value="$PROJECT_DIR$/photify/build.gradle" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java" />
+        <option value="$PROJECT_DIR$/fb/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/fb/build.gradle" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/FacebookLoginFragment.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/FacebookLoginFragment.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/photify/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/photify/src/main/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -761,7 +1237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -787,11 +1263,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -859,7 +1335,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,6 +1424,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/photify/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/fb/src/main/res" />
+      <recent name="$PROJECT_DIR$/fb/src/main/java" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.photify-photify">
@@ -1053,6 +1584,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -1124,7 +1660,11 @@
       <created>1389698468114</created>
       <updated>1389698468114</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="테스트용 이미지 추가 - url연결....&#10;나중에 페이스북 멤버 id받으면 url던져주기만 하면 로드 할듯...&#10;&#10;UrlImageView &#10;이미지 백그라운드에서 다운로드 받아 보여주기 기능&#10;&#10;메인 이미지에서 가로를 화면 가로에 맞췄는데 세로를 어떻게 해야할지 모르겠음.&#10;&#10;! 상세보기 엑티비티에서 가로 스와이프하면 이전 화면으로 돌아가도록? (pinterest 화면 처럼....)">
+      <created>1389701109111</created>
+      <updated>1389701109111</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1132,9 +1672,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1143,8 +1683,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1170,6 +1710,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -1178,13 +1720,16 @@
     <MESSAGE value="Gradle 빌드 성공..&#10;&#10;google play service &#10;event bus&#10;androidannotations &#10;&#10;라이브러리 추가 및 메이븐 레포지터리 연동&#10;&#10;DetailActivity 추가" />
     <MESSAGE value="Google map 연동 성공&#10;&#10;keystore 추가했지만 /.android/debug.keystore 값 사용함&#10;-&gt; gradle 빌드시 커스텀 키스토어 추가했는데 잘 안됬음...&#10;&#10;debug.keystore sha1 fingerprint&#10;B6:4B:9D:4B:91:C1:6C:C5:D4:54:B1:E6:1C:D5:EA:08:45:13:6F:33&#10;&#10;photify.keystore sha1 fingerprint&#10;8B:23:BB:ED:6A:F2:83:AA:ED:BD:A9:0B:8A:7F:3C:81:BE:2E:64:B2&#10;&#10;password : photify&#10;alias : photify.keystore&#10;package name : ac.jejunu.photify&#10;&#10;google paly service API key (현재 debug.keystore로 등록되어 있음,,,)&#10;AIzaSyAe7NeBpjZYoW8gnN8V3NwVH5LGJzozsk0" />
     <MESSAGE value="DetailActivity &#10;&#10;레이아웃 큰 구성만 만듬.&#10;(이미지뷰, 맵, 코맨트 정도)&#10;&#10;서버에서 데이터 받아오기, 각 UI컴포넌트와 연결, view 동적 생성 등 필요&#10;intent 정의...?&#10;&#10;사진에 drop shadow 하고 싶은데?" />
-    <option name="LAST_COMMIT_MESSAGE" value="DetailActivity &#10;&#10;레이아웃 큰 구성만 만듬.&#10;(이미지뷰, 맵, 코맨트 정도)&#10;&#10;서버에서 데이터 받아오기, 각 UI컴포넌트와 연결, view 동적 생성 등 필요&#10;intent 정의...?&#10;&#10;사진에 drop shadow 하고 싶은데?" />
+    <MESSAGE value="테스트용 이미지 추가 - url연결....&#10;나중에 페이스북 멤버 id받으면 url던져주기만 하면 로드 할듯...&#10;&#10;UrlImageView &#10;이미지 백그라운드에서 다운로드 받아 보여주기 기능&#10;&#10;메인 이미지에서 가로를 화면 가로에 맞췄는데 세로를 어떻게 해야할지 모르겠음.&#10;&#10;! 상세보기 엑티비티에서 가로 스와이프하면 이전 화면으로 돌아가도록? (pinterest 화면 처럼....)" />
+    <MESSAGE value="패키지 변경&#10;&#10;엑티비티 패키지 - 액티비티 포함&#10; ㄴ 프래그먼트 - 프래그먼트 포함" />
+    <MESSAGE value="Facebook SDK 포함&#10;Facebook Login 기능 구현함" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facebook SDK 포함&#10;Facebook Login 기능 구현함" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="49" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
           <folding />
@@ -1196,9 +1741,13 @@
         <state line="27" column="37" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="780">
           <folding>
             <element signature="e#783#801#0" expanded="true" />
-            <element signature="e#915#933#0" expanded="true" />
-            <element signature="e#1030#1048#0" expanded="true" />
-            <element signature="e#1310#1328#0" expanded="true" />
+            <element signature="e#908#926#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1122#1140#0" expanded="true" />
+            <element signature="e#1390#1408#0" expanded="true" />
+            <element signature="e#1504#1522#0" expanded="true" />
+            <element signature="e#1622#1648#0" expanded="true" />
+            <element signature="e#1823#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1213,14 +1762,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment/TestFragment.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="43" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="49" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
           <folding />
@@ -1232,9 +1781,13 @@
         <state line="11" column="26" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="780">
           <folding>
             <element signature="e#783#801#0" expanded="true" />
-            <element signature="e#915#933#0" expanded="true" />
-            <element signature="e#1030#1048#0" expanded="true" />
-            <element signature="e#1310#1328#0" expanded="true" />
+            <element signature="e#908#926#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1122#1140#0" expanded="true" />
+            <element signature="e#1390#1408#0" expanded="true" />
+            <element signature="e#1504#1522#0" expanded="true" />
+            <element signature="e#1622#1648#0" expanded="true" />
+            <element signature="e#1823#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1246,7 +1799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="54" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2520">
           <folding />
@@ -1272,16 +1825,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment/TestFragment.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.21475771" vertical-offset="0" max-vertical-offset="908">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.525" vertical-offset="180" max-vertical-offset="2280">
           <folding />
         </state>
       </provider>
@@ -1293,12 +1839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/photify-photify.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="710" selection-end="710" vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="1635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="901" selection-end="901" vertical-scroll-proportion="0.6616667" vertical-offset="383" max-vertical-offset="1350">
+        <state line="9" column="40" selection-start="710" selection-end="710" vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
@@ -1310,13 +1851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/GoogleMapTestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="286" selection-end="286" vertical-scroll-proportion="0.225" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
@@ -1324,31 +1858,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/UrlImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="795">
+        <state line="25" column="63" selection-start="737" selection-end="737" vertical-scroll-proportion="0.04955947" vertical-offset="330" max-vertical-offset="2430">
           <folding>
-            <element signature="e#783#801#0" expanded="true" />
-            <element signature="e#915#933#0" expanded="true" />
-            <element signature="e#1030#1048#0" expanded="true" />
-            <element signature="e#1310#1328#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="384" selection-end="384" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="272" selection-end="272" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1275">
+        <state line="6" column="15" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10215664" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
@@ -1356,19 +1877,132 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="32" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="10" column="48" selection-start="384" selection-end="384" vertical-scroll-proportion="0.17026107" vertical-offset="0" max-vertical-offset="881">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="443" selection-end="443" vertical-scroll-proportion="0.09911894" vertical-offset="0" max-vertical-offset="908">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/UrlImageView.java">
+    <entry file="file://$PROJECT_DIR$/fb/src/main/java/com/facebook/model/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="3" selection-start="630" selection-end="630" vertical-scroll-proportion="0.025" vertical-offset="330" max-vertical-offset="2430">
+        <state line="23" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.08259912" vertical-offset="0" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="263" selection-end="263" vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1047" selection-end="1086" vertical-scroll-proportion="0.33560476" vertical-offset="688" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4855196" vertical-offset="0" max-vertical-offset="587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/GoogleMapTestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="50" selection-start="235" selection-end="235" vertical-scroll-proportion="0.11563877" vertical-offset="0" max-vertical-offset="908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="366" selection-end="366" vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#305#328#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="40" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.85" vertical-offset="0" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="456" selection-end="456" vertical-scroll-proportion="0.22133939" vertical-offset="0" max-vertical-offset="881">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/src/main/java/com/facebook/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="37" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.475" vertical-offset="0" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fb/src/main/java/com/facebook/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1027" column="41" selection-start="43543" selection-end="43543" vertical-scroll-proportion="0.53333336" vertical-offset="14605" max-vertical-offset="29775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="246" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="45" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.49914822" vertical-offset="112" max-vertical-offset="1035">
+          <folding>
+            <element signature="e#783#801#0" expanded="true" />
+            <element signature="e#908#926#0" expanded="true" />
+            <element signature="e#1016#1034#0" expanded="true" />
+            <element signature="e#1122#1140#0" expanded="true" />
+            <element signature="e#1390#1408#0" expanded="true" />
+            <element signature="e#1504#1522#0" expanded="true" />
+            <element signature="e#1622#1648#0" expanded="true" />
+            <element signature="e#1823#1848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/FacebookLoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="27" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.68833333" vertical-offset="37" max-vertical-offset="2580">
+          <folding />
         </state>
       </provider>
     </entry>

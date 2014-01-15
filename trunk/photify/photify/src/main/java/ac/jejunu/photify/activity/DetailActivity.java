@@ -1,6 +1,7 @@
-package ac.jejunu.photify;
+package ac.jejunu.photify.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import ac.jejunu.photify.R;
 import ac.jejunu.photify.view.UrlImageView;
 
 public class DetailActivity extends Activity {
@@ -18,6 +20,10 @@ public class DetailActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_detail);
+
+//		Intent intent = getIntent();
+//		String postid = intent.getStringExtra("postid");
+		// get json data from server??
 
 		try {
 			UrlImageView mainImage = (UrlImageView) findViewById(R.id.iv_mainphoto);
@@ -44,6 +50,5 @@ public class DetailActivity extends Activity {
 
 		commentsLayout.addView(child);
 	}
-
 
 }
