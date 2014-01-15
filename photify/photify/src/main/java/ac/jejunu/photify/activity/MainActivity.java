@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ac.jejunu.photify.R;
+import ac.jejunu.photify.activity.fragment.StaggeredGridViewTestFragment;
 import ac.jejunu.photify.activity.fragment.TestFragment;
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -136,23 +137,29 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 	}
 
 	public static class FragmentPlaceHolder {
-		private TestFragment[] fragments;
+		private Fragment[] fragments;
+		private String[] titles = new String[]{
+				"TEST1",
+				"TEST2",
+				"TEST3",
+				"TEST4",
+		};
 
 		public FragmentPlaceHolder() {
-			fragments = new TestFragment[]{
-					new TestFragment("TEST 1"),
+			fragments = new Fragment[]{
+					new StaggeredGridViewTestFragment(),
 					new TestFragment("TEST 2"),
 					new TestFragment("TEST 3"),
 					new TestFragment("TEST 4"),
 			};
 		}
 
-		public TestFragment getFragment(int index) {
+		public Fragment getFragment(int index) {
 			return fragments[index];
 		}
 
 		public String getTitle(int index) {
-			return fragments[index].getTitle();
+			return titles[index];
 		}
 
 		public int getCount() {

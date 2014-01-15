@@ -8,8 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/arcmenu" />
             <option value="$PROJECT_DIR$/fb" />
             <option value="$PROJECT_DIR$/photify" />
+            <option value="$PROJECT_DIR$/staggeredgridview" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -14,7 +14,7 @@
 			android:layout_height="wrap_content"
 			android:orientation="vertical">
 
-			<!--main image-->
+			<!--fragment_facebook_login image-->
 			<ac.jejunu.photify.view.UrlImageView
 				android:layout_width="fill_parent"
 				android:layout_height="fill_parent"
