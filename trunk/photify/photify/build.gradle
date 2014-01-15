@@ -58,6 +58,7 @@ android {
 //	}
 
 	lintOptions {
+		quiet true
 		abortOnError false
 	}
 
@@ -76,4 +77,7 @@ dependencies {
 	apt "com.squareup.dagger:dagger-compiler:${daggerVersion}"
 	apt "org.androidannotations:androidannotations:${androidAnnotationsVersion}"
 	compile project(':fb')
+	compile project(':arcmenu')
+	compile project(':staggeredgridview')
+	compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.3'
 }

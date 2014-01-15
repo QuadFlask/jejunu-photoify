@@ -1,1 +1,1 @@
-include ':photify', ':fb'
+include ':photify', ':fb', ':arcmenu', ':staggeredgridview'

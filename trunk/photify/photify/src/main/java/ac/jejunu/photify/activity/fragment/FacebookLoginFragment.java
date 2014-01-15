@@ -28,6 +28,7 @@ import com.facebook.UiLifecycleHelper;
 import com.facebook.widget.LoginButton;
 
 import ac.jejunu.photify.R;
+import ac.jejunu.photify.activity.MainActivity;
 
 public class FacebookLoginFragment extends Fragment {
 
@@ -53,7 +54,7 @@ public class FacebookLoginFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater,
 	                         ViewGroup container,
 	                         Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.main, container, false);
+		View view = inflater.inflate(R.layout.fragment_facebook_login, container, false);
 
 		LoginButton authButton = (LoginButton) view.findViewById(R.id.authButton);
 		authButton.setFragment(this);
@@ -84,7 +85,7 @@ public class FacebookLoginFragment extends Fragment {
 	public void onResume() {
 		super.onResume();
 
-		// For scenarios where the main activity is launched and user
+		// For scenarios where the fragment_facebook_login activity is launched and user
 		// session is not null, the session state change notification
 		// may not be triggered. Trigger it if it's open/closed.
 		Session session = Session.getActiveSession();
@@ -178,6 +179,8 @@ public class FacebookLoginFragment extends Fragment {
 								.getApplicationContext(),
 								postId,
 								Toast.LENGTH_LONG).show();
+						// when login is successful
+						startActivity(new Intent(getActivity().getApplicationContext(), MainActivity.class));
 					}
 				}
 			};
