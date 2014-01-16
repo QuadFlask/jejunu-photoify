@@ -35,6 +35,13 @@ android {
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
 		}
 	}
+	packagingOptions {
+		exclude 'META-INF/dependencies'
+		exclude 'META-INF/notice'
+		exclude 'META-INF/license'
+		exclude 'META-INF/license.txt'
+		exclude 'META-INF/notice.txt'
+	}
 
 //	signingConfigs {
 //		devConfing {
@@ -62,7 +69,9 @@ android {
 		abortOnError false
 	}
 
+
 }
+
 configurations {
 	apt
 }
@@ -71,13 +80,48 @@ dependencies {
 	compile 'com.android.support:support-v4:19.0.0'
 	compile 'com.android.support:gridlayout-v7:19.0.0'
 	compile 'com.android.support:appcompat-v7:19.0.0'
-	compile 'com.google.android.gms:play-services:4.0.30'
 	//	compile "de.greenrobot:eventbus:2.2.0" otto 쓸까??
-	compile 'com.google.code.gson:gson:1.7.2'
+
 	apt "com.squareup.dagger:dagger-compiler:${daggerVersion}"
+	compile "com.squareup.dagger:dagger:${daggerVersion}"
 	apt "org.androidannotations:androidannotations:${androidAnnotationsVersion}"
+	compile "org.androidannotations:androidannotations-api:${androidAnnotationsVersion}"
+
+	compile 'com.google.android.gms:play-services:4.0.30'
+	compile 'com.google.code.gson:gson:1.7.2'
+
+	compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.3'
+	compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+//	compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
+	compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+
 	compile project(':fb')
 	compile project(':arcmenu')
 	compile project(':staggeredgridview')
-	compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.3'
+}
+
+android.applicationVariants.all { variant ->
+	aptOutput = file("${project.buildDir}/source/apt_generated/${variant.dirName}")
+	println "****************************"
+	println "variant: ${variant.name}"
+	println "manifest:  ${variant.processResources.manifestFile}"
+	println "aptOutput:  ${aptOutput}"
+	println "****************************"
+
+	variant.javaCompile.source = variant.javaCompile.source.filter { p ->
+		return !p.getPath().startsWith(aptOutput.getPath())
+	}
+
+	variant.javaCompile.doFirst {
+		println "*** compile doFirst ${variant.name}"
+		aptOutput.mkdirs()
+
+		variant.javaCompile.options.compilerArgs += [
+				'-classpath', configurations.compile.asPath,
+				'-processorpath', configurations.apt.getAsPath(),
+				'-AandroidManifestFile=' + variant.processResources.manifestFile,
+				'-AresourcePackageName=ac.jejunu.photify',
+				'-s', aptOutput
+		]
+	}
 }

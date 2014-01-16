@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ac.jejunu.photify.R;
+import ac.jejunu.photify.activity.fragment.JsonTestFragment;
+import ac.jejunu.photify.activity.fragment.JsonTestFragment_;
 import ac.jejunu.photify.activity.fragment.StaggeredGridViewTestFragment;
 import ac.jejunu.photify.activity.fragment.TestFragment;
 
@@ -147,8 +149,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
 		public FragmentPlaceHolder() {
 			fragments = new Fragment[]{
+					new JsonTestFragment_(),
 					new StaggeredGridViewTestFragment(),
-					new TestFragment("TEST 2"),
 					new TestFragment("TEST 3"),
 					new TestFragment("TEST 4"),
 			};
