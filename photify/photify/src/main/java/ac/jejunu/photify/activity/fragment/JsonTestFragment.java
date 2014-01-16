@@ -7,6 +7,7 @@ import android.widget.TextView;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.rest.RestService;
 import org.springframework.http.HttpEntity;
@@ -30,13 +31,23 @@ public class JsonTestFragment extends Fragment {
 
 	@AfterViews
 	void onBindComplete() {
-		backgroundJob();
+		try {
+			backgroundJob();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@UiThread
+	void setData(String data) {
+		section_label.setText(data);
 	}
 
 	@Background
 	void backgroundJob() {
 		SampleEntity sampleEntity = myRestClient.getSampleEntity();
-		section_label.setText(" from myRestClient: " + sampleEntity.toString());
+
+		setData(sampleEntity.toString());
 	}
 
 }

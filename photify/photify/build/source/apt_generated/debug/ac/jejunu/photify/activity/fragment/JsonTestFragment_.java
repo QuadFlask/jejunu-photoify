@@ -7,6 +7,8 @@ package ac.jejunu.photify.activity.fragment;
 
 import ac.jejunu.photify.R.layout;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +25,7 @@ public final class JsonTestFragment_
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
     private View contentView_;
+    private Handler handler_ = new Handler(Looper.getMainLooper());
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,20 @@ public final class JsonTestFragment_
     public void onViewChanged(HasViews hasViews) {
         section_label = ((TextView) hasViews.findViewById(ac.jejunu.photify.R.id.section_label));
         onBindComplete();
+    }
+
+    @Override
+    public void setData(final String data) {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                JsonTestFragment_.super.setData(data);
+            }
+
+        }
+        );
     }
 
     @Override
