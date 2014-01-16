@@ -14,148 +14,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="5ce4a0e6-2cb7-402e-a8dc-75fc017d6a42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_blue_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_blue_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi/com_facebook_button_blue_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_blue_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_blue_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi/com_facebook_button_blue_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_blue_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_check_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_check_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_grey_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_grey_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_grey_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_grey_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_grey_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-ldpi/com_facebook_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_inverse_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_inverse_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi/com_facebook_inverse_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_inverse_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_list_divider.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_list_section_header_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_focused.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_longpressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_pressed.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_selector_disabled.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi/com_facebook_picker_magnifier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi/com_facebook_picker_magnifier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi/com_facebook_picker_magnifier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_place_default_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_profile_default_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_profile_picture_blank_portrait.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_profile_picture_blank_square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_button_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_button_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_camera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_icn_plus_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_icn_plus_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_music.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_place.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_sleep.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_thought.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_with.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-hdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-hdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-hdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-ldpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-mdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-mdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-mdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-xhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable-xhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-xhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-xxhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-xxhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-es" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-hdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-he" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-iw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-ldpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-mdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-xhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/layout/arc_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_blue.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_button_check.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_friendpickerfragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_login_activity_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_loginbutton_silver.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_activity_circle_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_checkbox.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_image.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_item_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_list_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_list_section_header.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_selector.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_list_selector_background_transition.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_search_box.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_title_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_picker_title_bar_stub.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_picker_top_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_placepickerfragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_placepickerfragment_list_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_search_bar_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_top_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_top_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/layout/com_facebook_usersettingsfragment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/drawable/composer_icn_plus.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-hdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-ldpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-mdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-xhdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values/drawables.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/layout/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/layout/ray_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/arcmenu/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-es/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-he/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values-iw/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staggeredgridview/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fb/src/main/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_android_auth_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_android_core_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_android_rest_template_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_asm_3_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_core_3_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_security_crypto_3_1_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__spring_social_core_1_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/JsonTestFragment_.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/MyRestClient_.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/androidannotations.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_android_auth_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_android_core_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_android_rest_template_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_asm_3_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_core_3_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_security_crypto_3_1_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_social_core_1_0_2_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build.gradle" afterPath="$PROJECT_DIR$/photify/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/photify-photify.iml" afterPath="$PROJECT_DIR$/photify/photify-photify.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml" afterPath="$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="photify.iws" />
@@ -220,61 +109,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="row_staggered_demo.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="JsonTestFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330">
+            <state line="31" column="27" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+      <file leaf-file-name="MyRestClient.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="47" selection-start="888" selection-end="888" vertical-scroll-proportion="0.020833334" vertical-offset="290" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="33" selection-start="4686" selection-end="4686" vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="2640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="570">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleMapTestActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/GoogleMapTestActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_maptest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_maptest.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="54" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
+            <state line="12" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.1486784" vertical-offset="0" max-vertical-offset="908">
               <folding />
             </state>
           </provider>
@@ -1775,7 +1622,6 @@
       <list>
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/fragment/TestFragment.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/MainActivity.java" />
-        <option value="$PROJECT_DIR$/photify/photify-photify.iml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/GoogleMapTestActivity.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/UrlImageView.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/DetailActivity.java" />
@@ -1796,16 +1642,20 @@
         <option value="$PROJECT_DIR$/staggeredgridview/build.gradle" />
         <option value="$PROJECT_DIR$/arcmenu/build.gradle" />
         <option value="$PROJECT_DIR$/fb/build.gradle" />
-        <option value="$PROJECT_DIR$/photify/build.gradle" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TitledFragment.java" />
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/fragment_sttaggeredgrid_test.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/loader/Utils.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/ScaleImageView.java" />
-        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/StaggeredGridViewTestFragment.java" />
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java" />
+        <option value="$PROJECT_DIR$/photify/build.gradle" />
+        <option value="$PROJECT_DIR$/photify/photify-photify.iml" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java" />
       </list>
     </option>
   </component>
@@ -1814,8 +1664,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1920" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1956,42 +1806,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staggeredgridview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staggeredgridview" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2227,78 +2041,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arcmenu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arcmenu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -2311,7 +2053,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -2324,6 +2066,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -2596,18 +2340,23 @@
       <created>1389779669103</created>
       <updated>1389779669103</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="각 라이브러리 res 폴더 추가......">
+      <created>1389853703116</created>
+      <updated>1389853703116</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32804233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2622,13 +2371,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20100144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20820022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2657,47 +2405,14 @@
     <MESSAGE value="Facebook SDK 포함&#10;Facebook Login 기능 구현함" />
     <MESSAGE value="keystore 추가" />
     <MESSAGE value="staggeredgridview, arcmenu 라이브러리 추가. &#10;&#10;메인엑티비티에서 첫번째 프래그먼트에선 기본적으로 staggeredgridview sample 띄우도록 함.&#10;(근데 조금 버벅이는 느낌이 있음...)" />
-    <option name="LAST_COMMIT_MESSAGE" value="staggeredgridview, arcmenu 라이브러리 추가. &#10;&#10;메인엑티비티에서 첫번째 프래그먼트에선 기본적으로 staggeredgridview sample 띄우도록 함.&#10;(근데 조금 버벅이는 느낌이 있음...)" />
+    <MESSAGE value="각 라이브러리 res 폴더 추가......" />
+    <MESSAGE value="AndroidAnnotations 연동... apt&#10;&#10;간단한 RestAPI 구현 (/jsontest.photo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="AndroidAnnotations 연동... apt&#10;&#10;간단한 RestAPI 구현 (/jsontest.photo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="2520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.26373628" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/fragment_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="47" selection-start="663" selection-end="663" vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="910">
@@ -2713,11 +2428,6 @@
     <entry file="file://$PROJECT_DIR$/photify.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="770" selection-end="770" vertical-scroll-proportion="0.30664396" vertical-offset="0" max-vertical-offset="587" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/photify-photify.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="710" selection-end="710" vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="1635" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_main.xml">
@@ -2883,7 +2593,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staggeredgridview/src/main/java/com/origamilabs/library/views/StaggeredGridView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="303" column="32" selection-start="10016" selection-end="10016" vertical-scroll-proportion="0.15332198" vertical-offset="4455" max-vertical-offset="39225" />
+        <state line="303" column="32" selection-start="10016" selection-end="10016" vertical-scroll-proportion="0.15332198" vertical-offset="4455" max-vertical-offset="39225">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staggeredgridview/src/main/java/com/origamilabs/library/views/ScrollerCompatIcs.java">
@@ -2894,13 +2608,6 @@
     <entry file="file://$PROJECT_DIR$/staggeredgridview/src/main/java/com/origamilabs/library/views/ScrollerCompat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="9" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.6132879" vertical-offset="0" max-vertical-offset="2580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="38" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.92833334" vertical-offset="643" max-vertical-offset="1335">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/LoginActivity.java">
@@ -2914,10 +2621,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="50" selection-start="5088" selection-end="5088" vertical-scroll-proportion="0.25660792" vertical-offset="1732" max-vertical-offset="2715">
           <folding>
-            <element signature="e#1948#2051#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#4957#5805#0" expanded="true" />
-            <element signature="e#5799#5800#0" expanded="true" />
+            <element signature="e#1948#2051#0" expanded="false" />
+            <element signature="e#2046#2047#0" expanded="false" />
+            <element signature="e#4957#5805#0" expanded="false" />
+            <element signature="e#5799#5800#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2935,13 +2642,6 @@
     <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/loader/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="1" selection-start="538" selection-end="538" vertical-scroll-proportion="0.3469163" vertical-offset="0" max-vertical-offset="908">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="9" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.37995595" vertical-offset="0" max-vertical-offset="908">
           <folding />
         </state>
       </provider>
@@ -2977,33 +2677,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="77" selection-start="360" selection-end="360" vertical-scroll-proportion="0.14423077" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="33" selection-start="4686" selection-end="4686" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="14" column="29" selection-start="432" selection-end="432" vertical-scroll-proportion="0.29957205" vertical-offset="0" max-vertical-offset="701">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/GoogleMapTestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+        <state line="12" column="40" selection-start="314" selection-end="314" vertical-scroll-proportion="0.24725275" vertical-offset="0" max-vertical-offset="728">
           <folding />
         </state>
       </provider>
@@ -3013,14 +2706,81 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
+        <state line="10" column="54" selection-start="421" selection-end="421" vertical-scroll-proportion="0.21398003" vertical-offset="0" max-vertical-offset="701">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="888" selection-end="888" vertical-scroll-proportion="0.020833334" vertical-offset="290" max-vertical-offset="1020">
+        <state line="31" column="28" selection-start="896" selection-end="896" vertical-scroll-proportion="0.31387666" vertical-offset="0" max-vertical-offset="908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="417" selection-end="417" vertical-scroll-proportion="0.16759777" vertical-offset="0" max-vertical-offset="895">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="344" selection-end="344" vertical-scroll-proportion="0.280837" vertical-offset="0" max-vertical-offset="908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/MyRestClient_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="52" selection-start="847" selection-end="847" vertical-scroll-proportion="0.5208333" vertical-offset="0" max-vertical-offset="675">
+          <folding>
+            <element signature="e#0#1424#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/JsonTestFragment_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+          <folding>
+            <element signature="e#0#3194#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="56" selection-start="4464" selection-end="4464" vertical-scroll-proportion="1.9328194" vertical-offset="0" max-vertical-offset="2370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="27" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/photify-photify.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="65" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.36871508" vertical-offset="285" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="54" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.20704846" vertical-offset="1072" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.1486784" vertical-offset="0" max-vertical-offset="908">
           <folding />
         </state>
       </provider>
@@ -3078,7 +2838,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>staggeredgridview</last-edited>
+          <last-edited>photify</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
