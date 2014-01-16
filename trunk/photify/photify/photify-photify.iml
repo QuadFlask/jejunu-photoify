@@ -73,13 +73,13 @@
     <orderEntry type="library" exported="" name="ComAndroidSupportGridlayoutV71900.aar" level="project" />
     <orderEntry type="library" exported="" name="ComGoogleAndroidGmsPlayServices4030.aar" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.0.0" level="project" />
+    <orderEntry type="module" module-name="staggeredgridview" exported="" />
     <orderEntry type="library" exported="" name="ComGithubCastorflexSmoothprogressbarLibrary020.aar" level="project" />
     <orderEntry type="library" exported="" name="gson-1.7.2" level="project" />
     <orderEntry type="library" exported="" name="ComAndroidSupportAppcompatV71900.aar" level="project" />
     <orderEntry type="module" module-name="fb" exported="" />
     <orderEntry type="library" exported="" name="ComGithubChrisbanesActionbarpulltorefreshLibrary093.aar" level="project" />
     <orderEntry type="module" module-name="arcmenu" exported="" />
-    <orderEntry type="module" module-name="staggeredgridview" />
   </component>
 </module>
 
