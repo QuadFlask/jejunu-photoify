@@ -6,6 +6,8 @@
 package ac.jejunu.photify.activity.fragment;
 
 import ac.jejunu.photify.R.layout;
+import ac.jejunu.photify.rest.MyRestClient_;
+import ac.jejunu.photify.rest.TestCommandRestClient_;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -54,6 +56,7 @@ public final class JsonTestFragment_
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
         myRestClient = new MyRestClient_();
+        testCommandRestClient = new TestCommandRestClient_();
     }
 
     @Override
@@ -70,6 +73,20 @@ public final class JsonTestFragment_
     public void onViewChanged(HasViews hasViews) {
         section_label = ((TextView) hasViews.findViewById(ac.jejunu.photify.R.id.section_label));
         onBindComplete();
+    }
+
+    @Override
+    public void appendData(final String data) {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                JsonTestFragment_.super.appendData(data);
+            }
+
+        }
+        );
     }
 
     @Override

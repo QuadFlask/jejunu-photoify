@@ -14,10 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="5ce4a0e6-2cb7-402e-a8dc-75fc017d6a42" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity/TestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/TestCommandRestClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/MyRestClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity/SampleEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" afterPath="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/MyRestClient_.java" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/MyRestClient_.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/JsonTestFragment_.java" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/JsonTestFragment_.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build/source/apt_generated/androidannotations.log" afterPath="$PROJECT_DIR$/photify/build/source/apt_generated/androidannotations.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/build.gradle" afterPath="$PROJECT_DIR$/photify/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photify/photify-photify.iml" afterPath="$PROJECT_DIR$/photify/photify-photify.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="photify.iws" />
@@ -82,10 +90,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JsonTestFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="17" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1020">
+              <folding>
+                <element signature="e#1015#1033#0" expanded="true" />
+                <element signature="e#1121#1139#0" expanded="true" />
+                <element signature="e#1230#1248#0" expanded="true" />
+                <element signature="e#1344#1362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/photify/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="9" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.4696756" vertical-offset="747" max-vertical-offset="1950">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonTestFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="40" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.54545456" vertical-offset="15" max-vertical-offset="675">
+            <state line="11" column="48" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -1598,7 +1629,6 @@
         <option value="$PROJECT_DIR$/photify/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/FacebookLoginFragment.java" />
-        <option value="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/GoogleMapTestActivity.java" />
         <option value="$PROJECT_DIR$/arcmenu/src/main/java/com/capricorn/example/MainActivity.java" />
         <option value="$PROJECT_DIR$/arcmenu/src/main/AndroidManifest.xml" />
@@ -1615,12 +1645,16 @@
         <option value="$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/TestFragment.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java" />
-        <option value="$PROJECT_DIR$/photify/build.gradle" />
         <option value="$PROJECT_DIR$/photify/photify-photify.iml" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/EncodedFormHttpMessageConverter.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity/TestCommand.java" />
         <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/MyRestClient.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/TestCommandRestClient.java" />
+        <option value="$PROJECT_DIR$/photify/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/photify/build.gradle" />
       </list>
     </option>
   </component>
@@ -1741,6 +1775,34 @@
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="unused-library(library:project:eventbus-2.2.0)" />
+      <problem id="unused-library(library:project:Gradle: androidannotations-api-3.1-SNAPSHOT)" />
+      <problem id="unused-library(library:project:Gradle: ComAndroidSupportAppcompatV71900.aar)" />
+      <problem id="unused-library(library:project:Gradle: ComAndroidSupportGridlayoutV71900.aar)" />
+      <problem id="unused-library(library:project:Gradle: ComGithubCastorflexSmoothprogressbarLibrary020.aar)" />
+      <problem id="unused-library(library:project:Gradle: ComGithubChrisbanesActionbarpulltorefreshLibrary093.aar)" />
+      <problem id="unused-library(library:project:Gradle: ComGoogleAndroidGmsPlayServices4030.aar)" />
+      <problem id="unused-library(library:project:Gradle: dagger-1.0.0)" />
+      <problem id="unused-library(library:project:Gradle: eventbus-2.2.0)" />
+      <problem id="unused-library(library:project:Gradle: gson-1.7.2)" />
+      <problem id="unused-library(library:project:Gradle: javax.inject-1)" />
+      <problem id="unused-library(library:project:Gradle: spring-android-auth-1.0.1.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-android-core-1.0.1.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-android-rest-template-1.0.1.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-asm-3.0.7.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-core-3.0.7.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-security-crypto-3.1.3.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: spring-social-core-1.0.2.RELEASE)" />
+      <problem id="unused-library(library:project:Gradle: support-v4-19.0.0)" />
+      <problem id="unused-library(library:project:spring-android-auth-1.0.1.RELEASE)" />
+      <problem id="unused-library(library:project:spring-asm-3.0.7.RELEASE)" />
+      <problem id="unused-library(library:project:spring-core-3.0.7.RELEASE)" />
+      <problem id="unused-library(library:project:spring-security-crypto-3.1.3.RELEASE)" />
+      <problem id="unused-library(library:project:spring-social-core-1.0.2.RELEASE)" />
+    </ignored-problems>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -1930,7 +1992,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loader" />
+              <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photify" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2003,106 +2129,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apt_generated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apt_generated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="debug" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2118,7 +2144,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Android Logcat" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -2133,6 +2159,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/keystore/photify.keystore" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -2144,6 +2171,9 @@
       <recent name="$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify" />
       <recent name="$PROJECT_DIR$/staggeredgridview/src/main/res/values" />
       <recent name="$PROJECT_DIR$/arcmenu/src/main/res/values" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ac.jejunu.photify.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.photify-photify">
@@ -2417,8 +2447,32 @@
       <created>1389874375108</created>
       <updated>1389874375108</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="한글 깨짐 문제때문에 일단 URLEncoder/ Decoder써서 해결함..">
+      <created>1389927670109</created>
+      <updated>1389927670109</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
@@ -2429,28 +2483,28 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264192" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258547" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26495728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21260683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20820022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2482,44 +2536,13 @@
     <MESSAGE value="AndroidAnnotations 연동... apt&#10;&#10;간단한 RestAPI 구현 (/jsontest.photo)" />
     <MESSAGE value="AndroidAnnotations 연동... apt&#10;&#10;UiThread 나눔" />
     <MESSAGE value="한글 깨짐 문제때문에 일단 URLEncoder/ Decoder써서 해결함.." />
-    <option name="LAST_COMMIT_MESSAGE" value="한글 깨짐 문제때문에 일단 URLEncoder/ Decoder써서 해결함.." />
+    <MESSAGE value="포함된 키스토어 파일로 Signing 함. &#10;&#10;지문 : &#10;8B:23:BB:ED:6A:F2:83:AA:ED:BD:A9:0B:8A:7F:3C:81:BE:2E:64:B2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="포함된 키스토어 파일로 Signing 함. &#10;&#10;지문 : &#10;8B:23:BB:ED:6A:F2:83:AA:ED:BD:A9:0B:8A:7F:3C:81:BE:2E:64:B2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/photify.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="770" selection-end="770" vertical-scroll-proportion="0.30664396" vertical-offset="0" max-vertical-offset="587" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/activity_detail.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10215664" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/profile_and_text.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="384" selection-end="384" vertical-scroll-proportion="0.17026107" vertical-offset="0" max-vertical-offset="881">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fb/src/main/java/com/facebook/model/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.08259912" vertical-offset="0" max-vertical-offset="1590" />
@@ -2733,20 +2756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/ScaleImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.44603524" vertical-offset="0" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="77" selection-start="360" selection-end="360" vertical-scroll-proportion="0.14423077" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/res/layout/row_staggered_demo.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2788,7 +2797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/SampleEntity.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity/SampleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="26" selection-start="344" selection-end="344" vertical-scroll-proportion="0.280837" vertical-offset="0" max-vertical-offset="908">
           <folding />
@@ -2798,20 +2807,6 @@
     <entry file="file://$PROJECT_DIR$/photify/photify-photify.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="65" selection-start="3032" selection-end="3032" vertical-scroll-proportion="0.36871508" vertical-offset="285" max-vertical-offset="1455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="54" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.20704846" vertical-offset="1072" max-vertical-offset="1980">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/JsonTestFragment_.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="38" selection-start="1287" selection-end="1287" vertical-scroll-proportion="-0.42695355" vertical-offset="737" max-vertical-offset="1620">
           <folding />
         </state>
       </provider>
@@ -2830,23 +2825,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/build/source/apt_generated/debug/ac/jejunu/photify/activity/fragment/MyRestClient_.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/view/ScaleImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.4945055" vertical-offset="180" max-vertical-offset="645">
+        <state line="26" column="60" selection-start="900" selection-end="900" vertical-scroll-proportion="0.280837" vertical-offset="0" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/MyRestClient.java">
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/entity/TestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="0.28125" vertical-offset="0" max-vertical-offset="480">
+        <state line="25" column="5" selection-start="452" selection-end="452" vertical-scroll-proportion="0.280837" vertical-offset="0" max-vertical-offset="908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/MyRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.1-SNAPSHOT/99b37df22fe0d9b610a7f900d7eb98aaafef362d/androidannotations-api-3.1-SNAPSHOT.jar!/org/androidannotations/annotations/rest/Post.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="18" selection-start="187" selection-end="187" vertical-scroll-proportion="0.10964912" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/rest/TestCommandRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="785" selection-end="785" vertical-scroll-proportion="0.30508474" vertical-offset="0" max-vertical-offset="590">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photify/src/main/java/ac/jejunu/photify/activity/fragment/JsonTestFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="40" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.54545456" vertical-offset="15" max-vertical-offset="675">
+        <state line="11" column="48" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#1015#1033#0" expanded="true" />
+            <element signature="e#1121#1139#0" expanded="true" />
+            <element signature="e#1230#1248#0" expanded="true" />
+            <element signature="e#1344#1362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photify/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="9" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.4696756" vertical-offset="747" max-vertical-offset="1950">
           <folding />
         </state>
       </provider>
