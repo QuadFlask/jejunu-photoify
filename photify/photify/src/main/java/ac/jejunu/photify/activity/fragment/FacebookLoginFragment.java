@@ -1,15 +1,24 @@
 package ac.jejunu.photify.activity.fragment;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +26,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.facebook.FacebookException;
+import com.facebook.FacebookOperationCanceledException;
 import com.facebook.FacebookRequestError;
 import com.facebook.HttpMethod;
 import com.facebook.Request;
@@ -26,23 +37,24 @@ import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 import com.facebook.widget.LoginButton;
+import com.facebook.widget.WebDialog;
 
 import ac.jejunu.photify.R;
 import ac.jejunu.photify.activity.MainActivity;
 
+@EFragment(R.layout.fragment_facebook_login)
 public class FacebookLoginFragment extends Fragment {
 
 	private static final String TAG = "MainFragment";
 
-	private UiLifecycleHelper uiHelper;
-	private Session.StatusCallback callback = new Session.StatusCallback() {
-		@Override
-		public void call(final Session session, final SessionState state, final Exception exception) {
-			onSessionStateChange(session, state, exception);
-		}
-	};
+	@ViewById(R.id.shareButton)
+	Button shareButton;
 
-	private Button shareButton;
+	@ViewById(R.id.sendRequestButton)
+	Button sendRequestButton;
+
+	@ViewById(R.id.authButton)
+	LoginButton authButton;
 
 	private static final List<String> PERMISSIONS = Arrays.asList("publish_actions");
 
@@ -50,16 +62,25 @@ public class FacebookLoginFragment extends Fragment {
 
 	private boolean pendingPublishReauthorization = false;
 
-	@Override
-	public View onCreateView(LayoutInflater inflater,
-	                         ViewGroup container,
-	                         Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_facebook_login, container, false);
+	private UiLifecycleHelper uiHelper;
 
-		LoginButton authButton = (LoginButton) view.findViewById(R.id.authButton);
+	private Session.StatusCallback callback = new Session.StatusCallback() {
+		@Override
+		public void call(final Session session, final SessionState state, final Exception exception) {
+			onSessionStateChange(session, state, exception);
+		}
+	};
+
+	@AfterViews
+	void afterViews() {
+		sendRequestButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sendRequestDialog();
+			}
+		});
+
 		authButton.setFragment(this);
-
-		shareButton = (Button) view.findViewById(R.id.shareButton);
 		shareButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -67,11 +88,7 @@ public class FacebookLoginFragment extends Fragment {
 			}
 		});
 
-		if (savedInstanceState != null) {
-			pendingPublishReauthorization =
-					savedInstanceState.getBoolean(PENDING_PUBLISH_KEY, false);
-		}
-		return view;
+		printHashKey();
 	}
 
 	@Override
@@ -79,6 +96,10 @@ public class FacebookLoginFragment extends Fragment {
 		super.onCreate(savedInstanceState);
 		uiHelper = new UiLifecycleHelper(getActivity(), callback);
 		uiHelper.onCreate(savedInstanceState);
+		if (savedInstanceState != null) {
+			pendingPublishReauthorization =
+					savedInstanceState.getBoolean(PENDING_PUBLISH_KEY, false);
+		}
 	}
 
 	@Override
@@ -123,6 +144,7 @@ public class FacebookLoginFragment extends Fragment {
 	}
 
 	private void onSessionStateChange(Session session, SessionState state, Exception exception) {
+		Log.e("onSessionStateChange", "state : isOpen?:" + state.isOpened());
 		if (state.isOpened()) {
 			shareButton.setVisibility(View.VISIBLE);
 			if (pendingPublishReauthorization &&
@@ -130,8 +152,10 @@ public class FacebookLoginFragment extends Fragment {
 				pendingPublishReauthorization = false;
 				publishStory();
 			}
+			sendRequestButton.setVisibility(View.VISIBLE);
 		} else if (state.isClosed()) {
 			shareButton.setVisibility(View.INVISIBLE);
+			sendRequestButton.setVisibility(View.INVISIBLE);
 		}
 	}
 
@@ -202,5 +226,61 @@ public class FacebookLoginFragment extends Fragment {
 		return true;
 	}
 
+	private void sendRequestDialog() {
+		Bundle params = new Bundle();
+		params.putString("message", "Learn how to make your Android apps social");
+
+		WebDialog requestsDialog = (
+				new WebDialog.RequestsDialogBuilder(getActivity(),
+						Session.getActiveSession(),
+						params))
+				.setOnCompleteListener(new WebDialog.OnCompleteListener() {
+
+					@Override
+					public void onComplete(Bundle values,
+					                       FacebookException error) {
+						if (error != null) {
+							if (error instanceof FacebookOperationCanceledException) {
+								Toast.makeText(getActivity().getApplicationContext(),
+										"Request cancelled",
+										Toast.LENGTH_SHORT).show();
+							} else {
+								Toast.makeText(getActivity().getApplicationContext(),
+										"Network Error",
+										Toast.LENGTH_SHORT).show();
+							}
+						} else {
+							final String requestId = values.getString("request");
+							if (requestId != null) {
+								Toast.makeText(getActivity().getApplicationContext(),
+										"Request sent",
+										Toast.LENGTH_SHORT).show();
+							} else {
+								Toast.makeText(getActivity().getApplicationContext(),
+										"Request cancelled",
+										Toast.LENGTH_SHORT).show();
+							}
+						}
+					}
+
+				})
+				.build();
+		requestsDialog.show();
+	}
+
+	public void printHashKey() {
+		try {
+			PackageInfo info = getActivity().getPackageManager().getPackageInfo("ac.jejunu.photify", PackageManager.GET_SIGNATURES);
+			for (Signature signature : info.signatures) {
+				MessageDigest md = MessageDigest.getInstance("SHA");
+				md.update(signature.toByteArray());
+				Log.e("TEMPTAGHASH KEY:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+			}
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+	}
 }
 

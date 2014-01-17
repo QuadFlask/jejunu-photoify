@@ -80,10 +80,10 @@
     <orderEntry type="library" exported="" name="ComGoogleAndroidGmsPlayServices4030.aar" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="spring-android-core-1.0.1.RELEASE" level="project" />
-    <orderEntry type="module" module-name="staggeredgridview" exported="" />
     <orderEntry type="library" exported="" name="dagger-1.0.0" level="project" />
     <orderEntry type="library" exported="" name="gson-1.7.2" level="project" />
     <orderEntry type="library" exported="" name="ComGithubCastorflexSmoothprogressbarLibrary020.aar" level="project" />
+    <orderEntry type="library" exported="" name="restfb-1.6.12" level="project" />
     <orderEntry type="module" module-name="arcmenu" exported="" />
   </component>
 </module>

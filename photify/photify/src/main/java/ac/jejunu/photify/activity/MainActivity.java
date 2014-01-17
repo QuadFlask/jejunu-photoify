@@ -12,9 +12,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ac.jejunu.photify.R;
-import ac.jejunu.photify.activity.fragment.JsonTestFragment;
-import ac.jejunu.photify.activity.fragment.JsonTestFragment_;
-import ac.jejunu.photify.activity.fragment.StaggeredGridViewTestFragment;
+import ac.jejunu.photify.activity.fragment.FacebookLoginFragment;
+import ac.jejunu.photify.activity.fragment.FacebookLoginFragment_;
+import ac.jejunu.photify.activity.fragment.PostFragment;
 import ac.jejunu.photify.activity.fragment.TestFragment;
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -139,22 +139,19 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 	}
 
 	public static class FragmentPlaceHolder {
-		private Fragment[] fragments;
+		private Fragment[] fragments = new Fragment[]{
+//				new PostFragment(),
+				new TestFragment(),
+				new FacebookLoginFragment_(),
+				new TestFragment("TEST 4"),
+		};
 		private String[] titles = new String[]{
 				"TEST1",
 				"TEST2",
 				"TEST3",
 				"TEST4",
+				"TEST5",
 		};
-
-		public FragmentPlaceHolder() {
-			fragments = new Fragment[]{
-					new JsonTestFragment_(),
-					new StaggeredGridViewTestFragment(),
-					new TestFragment("TEST 3"),
-					new TestFragment("TEST 4"),
-			};
-		}
 
 		public Fragment getFragment(int index) {
 			return fragments[index];
