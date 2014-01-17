@@ -21,7 +21,7 @@ public final class MyRestClient_
     private RestErrorHandler restErrorHandler;
 
     public MyRestClient_() {
-        rootUrl = "http://113.198.161.77:8080/";
+        rootUrl = "http://192.168.0.3:8080/";
         restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(new FormHttpMessageConverter());
         restTemplate.getMessageConverters().add(new GsonHttpMessageConverter());
