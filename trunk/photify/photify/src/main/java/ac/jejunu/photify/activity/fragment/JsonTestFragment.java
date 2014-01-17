@@ -10,6 +10,9 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.rest.RestService;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
+import org.springframework.http.ContentCodingType;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -17,6 +20,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 
 import ac.jejunu.photify.R;
 
@@ -40,14 +47,19 @@ public class JsonTestFragment extends Fragment {
 
 	@UiThread
 	void setData(String data) {
-		section_label.setText(data);
+		section_label.setText("서버로부터 : " + data);
+		Log.e("JsonTestFragment", data);
 	}
 
 	@Background
 	void backgroundJob() {
-		SampleEntity sampleEntity = myRestClient.getSampleEntity();
+		try {
+			SampleEntity sampleEntity = myRestClient.getSampleEntity();
 
-		setData(sampleEntity.toString());
+			setData(URLDecoder.decode(sampleEntity.getName()));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
