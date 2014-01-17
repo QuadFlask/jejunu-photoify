@@ -21,14 +21,12 @@ repositories {
 android {
 	compileSdkVersion 19
 	buildToolsVersion '17.0.0'
-
 	defaultConfig {
 		minSdkVersion 10
 		targetSdkVersion 19
 		versionCode 1
 		versionName "1.0"
 	}
-
 	buildTypes {
 		release {
 			runProguard false
@@ -42,7 +40,6 @@ android {
 		exclude 'META-INF/license.txt'
 		exclude 'META-INF/notice.txt'
 	}
-
 //	signingConfigs {
 //		devConfing {
 //			storeFile file("../keystore/photify.keystore");
@@ -63,13 +60,18 @@ android {
 //			signingConfig signingConfigs.devConfing
 //		}
 //	}
-
 	lintOptions {
 		quiet true
 		abortOnError false
 	}
-
-
+	signingConfigs {
+		debug {
+			keyAlias 'photify.keystore'
+			keyPassword 'photify'
+			storeFile file('../keystore/photify.keystore')
+			storePassword 'photify'
+		}
+	}
 }
 
 configurations {
@@ -80,24 +82,20 @@ dependencies {
 	compile 'com.android.support:support-v4:19.0.0'
 	compile 'com.android.support:gridlayout-v7:19.0.0'
 	compile 'com.android.support:appcompat-v7:19.0.0'
-	//	compile "de.greenrobot:eventbus:2.2.0" otto 쓸까??
-
 	apt "com.squareup.dagger:dagger-compiler:${daggerVersion}"
 	compile "com.squareup.dagger:dagger:${daggerVersion}"
 	apt "org.androidannotations:androidannotations:${androidAnnotationsVersion}"
 	compile "org.androidannotations:androidannotations-api:${androidAnnotationsVersion}"
-
 	compile 'com.google.android.gms:play-services:4.0.30'
 	compile 'com.google.code.gson:gson:1.7.2'
-
 	compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.3'
 	compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
-//	compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
+	//	compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
 	compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
-
 	compile project(':fb')
 	compile project(':arcmenu')
 	compile project(':staggeredgridview')
+	//	compile "de.greenrobot:eventbus:2.2.0" otto 쓸까??
 }
 
 android.applicationVariants.all { variant ->

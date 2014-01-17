@@ -10,22 +10,14 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.rest.RestService;
-import org.apache.http.message.BasicHeader;
-import org.apache.http.protocol.HTTP;
-import org.springframework.http.ContentCodingType;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.web.client.RestTemplate;
 
-import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 
 import ac.jejunu.photify.R;
+import ac.jejunu.photify.entity.SampleEntity;
+import ac.jejunu.photify.entity.TestCommand;
+import ac.jejunu.photify.rest.MyRestClient;
+import ac.jejunu.photify.rest.TestCommandRestClient;
 
 @EFragment(R.layout.fragment_main)
 public class JsonTestFragment extends Fragment {
@@ -35,6 +27,9 @@ public class JsonTestFragment extends Fragment {
 
 	@RestService
 	MyRestClient myRestClient;
+
+	@RestService
+	TestCommandRestClient testCommandRestClient;
 
 	@AfterViews
 	void onBindComplete() {
@@ -51,12 +46,29 @@ public class JsonTestFragment extends Fragment {
 		Log.e("JsonTestFragment", data);
 	}
 
+	@UiThread
+	void appendData(String data) {
+		String s = section_label.getText().toString();
+		section_label.setText("서버로부터 : " + s.concat(data));
+	}
+
+	int i = 100;
+
 	@Background
 	void backgroundJob() {
 		try {
 			SampleEntity sampleEntity = myRestClient.getSampleEntity();
 
 			setData(URLDecoder.decode(sampleEntity.getName()));
+
+			TestCommand testCommand = testCommandRestClient.getTestCommand();
+			appendData(testCommand.toString());
+
+			testCommand = new TestCommand();
+			testCommand.setArticleid(100 + i++);
+			testCommand.setTitle("hello from android " + testCommand.getArticleid());
+			testCommandRestClient.sendTestCommand(testCommand);
+			appendData("sending : " + testCommand.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,4 +1,4 @@
-package ac.jejunu.photify.activity.fragment;
+package ac.jejunu.photify.entity;
 
 public class SampleEntity {
 
