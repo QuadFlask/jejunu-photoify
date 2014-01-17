@@ -55,8 +55,8 @@ public final class JsonTestFragment_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
-        myRestClient = new MyRestClient_();
         testCommandRestClient = new TestCommandRestClient_();
+        myRestClient = new MyRestClient_();
     }
 
     @Override
@@ -76,20 +76,6 @@ public final class JsonTestFragment_
     }
 
     @Override
-    public void appendData(final String data) {
-        handler_.post(new Runnable() {
-
-
-            @Override
-            public void run() {
-                JsonTestFragment_.super.appendData(data);
-            }
-
-        }
-        );
-    }
-
-    @Override
     public void setData(final String data) {
         handler_.post(new Runnable() {
 
@@ -97,6 +83,20 @@ public final class JsonTestFragment_
             @Override
             public void run() {
                 JsonTestFragment_.super.setData(data);
+            }
+
+        }
+        );
+    }
+
+    @Override
+    public void appendData(final String data) {
+        handler_.post(new Runnable() {
+
+
+            @Override
+            public void run() {
+                JsonTestFragment_.super.appendData(data);
             }
 
         }

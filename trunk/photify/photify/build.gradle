@@ -40,26 +40,7 @@ android {
 		exclude 'META-INF/license.txt'
 		exclude 'META-INF/notice.txt'
 	}
-//	signingConfigs {
-//		devConfing {
-//			storeFile file("../keystore/photify.keystore");
-//			storePassword "photify"
-//			keyAlias "photify.keystore"
-//			keyPassword "photify"
-//		}
-//		debug {
-//			storeFile file("your.keystore")
-//		}
-//	}
-//
-//	productFlavors {
-//		dev {
-//			packageName "ac.jejunu.photify"
-//			versionCode 1
-//			versionName "0.0.1"
-//			signingConfig signingConfigs.devConfing
-//		}
-//	}
+
 	lintOptions {
 		quiet true
 		abortOnError false
@@ -92,9 +73,9 @@ dependencies {
 	compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
 	//	compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
 	compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+	compile 'com.restfb:restfb:1.6.12'
 	compile project(':fb')
 	compile project(':arcmenu')
-	compile project(':staggeredgridview')
 	//	compile "de.greenrobot:eventbus:2.2.0" otto 쓸까??
 }
 
