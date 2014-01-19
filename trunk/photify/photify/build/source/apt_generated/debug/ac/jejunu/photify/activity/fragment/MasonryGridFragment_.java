@@ -6,28 +6,24 @@
 package ac.jejunu.photify.activity.fragment;
 
 import ac.jejunu.photify.R.layout;
-import ac.jejunu.photify.rest.MyRestClient_;
-import ac.jejunu.photify.rest.TestCommandRestClient_;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import org.androidannotations.api.BackgroundExecutor;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
 
-public final class JsonTestFragment_
-    extends JsonTestFragment
+public final class MasonryGridFragment_
+    extends MasonryGridFragment
     implements HasViews, OnViewChangedListener
 {
 
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
     private View contentView_;
-    private Handler handler_ = new Handler(Looper.getMainLooper());
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,15 +44,13 @@ public final class JsonTestFragment_
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         contentView_ = super.onCreateView(inflater, container, savedInstanceState);
         if (contentView_ == null) {
-            contentView_ = inflater.inflate(layout.fragment_main, container, false);
+            contentView_ = inflater.inflate(layout.fragment_masonry, container, false);
         }
         return contentView_;
     }
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
-        myRestClient = new MyRestClient_();
-        testCommandRestClient = new TestCommandRestClient_();
     }
 
     @Override
@@ -65,39 +59,28 @@ public final class JsonTestFragment_
         onViewChangedNotifier_.notifyViewChanged(this);
     }
 
-    public static JsonTestFragment_.FragmentBuilder_ builder() {
-        return new JsonTestFragment_.FragmentBuilder_();
+    public static MasonryGridFragment_.FragmentBuilder_ builder() {
+        return new MasonryGridFragment_.FragmentBuilder_();
     }
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        section_label = ((TextView) hasViews.findViewById(ac.jejunu.photify.R.id.section_label));
-        onBindComplete();
+        column1 = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column1));
+        scrollView = ((ScrollView) hasViews.findViewById(ac.jejunu.photify.R.id.scrollView));
+        column0 = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column0));
+        columnContainer = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column_container));
+        afterViews();
     }
 
     @Override
-    public void appendData(final String data) {
-        handler_.post(new Runnable() {
-
-
-            @Override
-            public void run() {
-                JsonTestFragment_.super.appendData(data);
-            }
-
-        }
-        );
-    }
-
-    @Override
-    public void backgroundJob() {
+    public void recycleImages() {
         BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
 
 
             @Override
             public void execute() {
                 try {
-                    JsonTestFragment_.super.backgroundJob();
+                    MasonryGridFragment_.super.recycleImages();
                 } catch (Throwable e) {
                     Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
                 }
@@ -115,8 +98,8 @@ public final class JsonTestFragment_
             args_ = new Bundle();
         }
 
-        public JsonTestFragment build() {
-            JsonTestFragment_ fragment_ = new JsonTestFragment_();
+        public MasonryGridFragment build() {
+            MasonryGridFragment_ fragment_ = new MasonryGridFragment_();
             fragment_.setArguments(args_);
             return fragment_;
         }

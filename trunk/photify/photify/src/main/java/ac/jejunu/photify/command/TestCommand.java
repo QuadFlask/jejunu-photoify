@@ -1,4 +1,4 @@
-package ac.jejunu.photify.entity;
+package ac.jejunu.photify.command;
 
 
 

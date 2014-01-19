@@ -11,11 +11,11 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.rest.RestService;
 
-import java.net.URLDecoder;
+import java.util.List;
 
 import ac.jejunu.photify.R;
-import ac.jejunu.photify.entity.SampleEntity;
-import ac.jejunu.photify.entity.TestCommand;
+import ac.jejunu.photify.command.ArticleCommand;
+import ac.jejunu.photify.entity.Article;
 import ac.jejunu.photify.rest.MyRestClient;
 import ac.jejunu.photify.rest.TestCommandRestClient;
 
@@ -41,15 +41,9 @@ public class JsonTestFragment extends Fragment {
 	}
 
 	@UiThread
-	void setData(String data) {
-		section_label.setText("서버로부터 : " + data);
-		Log.e("JsonTestFragment", data);
-	}
-
-	@UiThread
 	void appendData(String data) {
 		String s = section_label.getText().toString();
-		section_label.setText("서버로부터 : " + s.concat(data));
+		section_label.setText(s.concat(data));
 	}
 
 	int i = 100;
@@ -57,18 +51,27 @@ public class JsonTestFragment extends Fragment {
 	@Background
 	void backgroundJob() {
 		try {
-			SampleEntity sampleEntity = myRestClient.getSampleEntity();
+			int no = 2015 + i++;
 
-			setData(URLDecoder.decode(sampleEntity.getName()));
+			Article article = new Article();
+			article.setArticleid(no);
+			article.setTitle("article title " + no);
+			article.setContents("article contents");
+			article.setFbid("10010101010");
+			article.setLat(123);
+			article.setLng(456);
+			article.setPhotoUrl("https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c12.12.176.176/374637_189230964497111_247316888_n.jpg");
+			article.setWriter("article writer Flask");
+			appendData("writing, " + no);
+			appendData(" : " + article.toString());
 
-			TestCommand testCommand = testCommandRestClient.getTestCommand();
-			appendData(testCommand.toString());
+			String result = testCommandRestClient.writeArticle(article);
+			appendData(" // write result = " + result);
+			List<Article> articles = testCommandRestClient.getArticles(new ArticleCommand(2, 2));
 
-			testCommand = new TestCommand();
-			testCommand.setArticleid(100 + i++);
-			testCommand.setTitle("hello from android " + testCommand.getArticleid());
-			testCommandRestClient.sendTestCommand(testCommand);
-			appendData("sending : " + testCommand.toString());
+			for (Article a : articles) {
+				appendData(a.toString());
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
