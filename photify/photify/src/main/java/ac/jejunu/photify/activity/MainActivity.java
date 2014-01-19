@@ -12,9 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ac.jejunu.photify.R;
-import ac.jejunu.photify.activity.fragment.FacebookLoginFragment;
-import ac.jejunu.photify.activity.fragment.FacebookLoginFragment_;
-import ac.jejunu.photify.activity.fragment.PostFragment;
 import ac.jejunu.photify.activity.fragment.TestFragment;
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -141,9 +138,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 	public static class FragmentPlaceHolder {
 		private Fragment[] fragments = new Fragment[]{
 //				new PostFragment(),
+				new ac.jejunu.photify.activity.fragment.JsonTestFragment_(),
+				new ac.jejunu.photify.activity.fragment.MasonryGridFragment_(),
+				new ac.jejunu.photify.activity.fragment.FacebookLoginFragment_(),
 				new TestFragment(),
-				new FacebookLoginFragment_(),
-				new TestFragment("TEST 4"),
 		};
 		private String[] titles = new String[]{
 				"TEST1",

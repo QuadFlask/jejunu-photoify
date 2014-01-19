@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 /**
@@ -20,13 +21,13 @@ import android.widget.ImageView;
  * APIs: {@link #setImageURL(URL)}, {@link #cancelLoading()}.
  *
  * @author ep@gplushub.com / Eugen Plischke
- *
  */
 public class UrlImageView extends ImageView {
+
 	private static class UrlLoadingTask extends AsyncTask<URL, Void, Bitmap> {
 		private final ImageView updateView;
-		private boolean         isCancelled = false;
-		private InputStream     urlInputStream;
+		private boolean isCancelled = false;
+		private InputStream urlInputStream;
 
 		private UrlLoadingTask(ImageView updateView) {
 			this.updateView = updateView;
@@ -93,7 +94,7 @@ public class UrlImageView extends ImageView {
 	/*
 	   * just for sync
 	   */
-	private Object                       loadingMonitor = new Object();
+	private Object loadingMonitor = new Object();
 
 	public UrlImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -141,6 +142,14 @@ public class UrlImageView extends ImageView {
 			cancelLoading();
 			this.currentLoadingTask = new UrlLoadingTask(this).execute(url);
 		}
+	}
+
+	public void reloadImage(){
+
+	}
+
+	public void recycleImage(){
+
 	}
 
 	/**

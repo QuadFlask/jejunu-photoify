@@ -1,5 +1,9 @@
 package ac.jejunu.photify.activity.fragment;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -16,7 +20,10 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.util.Base64;
 import android.util.Log;
@@ -36,6 +43,10 @@ import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
+import com.facebook.android.AsyncFacebookRunner;
+import com.facebook.android.Facebook;
+import com.facebook.android.FacebookError;
+import com.facebook.android.Util;
 import com.facebook.widget.LoginButton;
 import com.facebook.widget.WebDialog;
 
@@ -56,7 +67,7 @@ public class FacebookLoginFragment extends Fragment {
 	@ViewById(R.id.authButton)
 	LoginButton authButton;
 
-	private static final List<String> PERMISSIONS = Arrays.asList("publish_actions");
+	private static final List<String> PERMISSIONS = Arrays.asList("publish_actions", "publish_stream", "read_stream");
 
 	private static final String PENDING_PUBLISH_KEY = "pendingPublishReauthorization";
 
@@ -97,8 +108,7 @@ public class FacebookLoginFragment extends Fragment {
 		uiHelper = new UiLifecycleHelper(getActivity(), callback);
 		uiHelper.onCreate(savedInstanceState);
 		if (savedInstanceState != null) {
-			pendingPublishReauthorization =
-					savedInstanceState.getBoolean(PENDING_PUBLISH_KEY, false);
+			pendingPublishReauthorization = savedInstanceState.getBoolean(PENDING_PUBLISH_KEY, false);
 		}
 	}
 
@@ -178,10 +188,21 @@ public class FacebookLoginFragment extends Fragment {
 			postParams.putString("caption", "Build great social apps and get more installs.");
 			postParams.putString("description", "The Facebook SDK for Android makes it easier and faster to develop Facebook integrated Android apps.");
 			postParams.putString("link", "https://developers.facebook.com/android");
-			postParams.putString("picture", "https://raw.github.com/fbsamples/ios-3.x-howtos/master/Images/iossdk_logo.png");
+
+			String appStorage = Environment.getExternalStorageDirectory().getPath();
+			String path = appStorage + "/PolarClock_background/background.png";
+//			addImage(postParams, path);
+
+			postParams.putString("picture", "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn1/t1/995001_553244524762418_873787853_n.jpg");
 
 			Request.Callback callback = new Request.Callback() {
 				public void onCompleted(Response response) {
+					if (response == null) return;
+					Log.e("Request.Callback", "Request.Callback response received!");
+					FacebookRequestError error = response.getError();
+					if (error != null)
+						Log.e("Request.Callback", error.getErrorType() + " : " + error.getErrorMessage());
+
 					JSONObject graphResponse = response
 							.getGraphObject()
 							.getInnerJSONObject();
@@ -189,10 +210,8 @@ public class FacebookLoginFragment extends Fragment {
 					try {
 						postId = graphResponse.getString("id");
 					} catch (JSONException e) {
-						Log.i(TAG,
-								"JSON error " + e.getMessage());
+						Log.i(TAG, "JSON error " + e.getMessage());
 					}
-					FacebookRequestError error = response.getError();
 					if (error != null) {
 						Toast.makeText(getActivity()
 								.getApplicationContext(),
@@ -203,14 +222,11 @@ public class FacebookLoginFragment extends Fragment {
 								.getApplicationContext(),
 								postId,
 								Toast.LENGTH_LONG).show();
-						// when login is successful
-						startActivity(new Intent(getActivity().getApplicationContext(), MainActivity.class));
 					}
 				}
 			};
 
-			Request request = new Request(session, "me/feed", postParams,
-					HttpMethod.POST, callback);
+			Request request = new Request(session, "me/feed", postParams, HttpMethod.POST, callback);
 
 			RequestAsyncTask task = new RequestAsyncTask(request);
 			task.execute();
@@ -280,6 +296,62 @@ public class FacebookLoginFragment extends Fragment {
 			e.printStackTrace();
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
+		}
+	}
+
+	public void addImage(Bundle params, String path) {
+		byte[] data = null;
+
+		Bitmap bi = BitmapFactory.decodeFile(path);
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		bi.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+		data = baos.toByteArray();
+
+//		params.putString("method", "photos.upload");
+		params.putByteArray("picture", data);
+	}
+
+//	public void postImageonWall(Facebook facebook) {
+//		AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
+//		mAsyncRunner.request(null, params, "POST", new SampleUploadListener(), null);
+//	}
+
+	class SampleUploadListener implements AsyncFacebookRunner.RequestListener {
+
+		@Override
+		public void onComplete(final String response, final Object state) {
+			try {
+				// process the response here: (executed in background thread)
+				Log.d("Facebook-Example", "Response: " + response.toString());
+				JSONObject json = Util.parseJson(response);
+				final String src = json.getString("src");
+
+				// then post the processed result back to the UI thread
+				// if we do not do this, an runtime exception will be generated
+				// e.g. "CalledFromWrongThreadException: Only the original
+				// thread that created a view hierarchy can touch its views."
+
+			} catch (JSONException e) {
+				Log.w("Facebook-Example", "JSON Error in response");
+			} catch (FacebookError e) {
+				Log.w("Facebook-Example", "Facebook Error: " + e.getMessage());
+			}
+		}
+
+		@Override
+		public void onIOException(IOException e, Object state) {
+		}
+
+		@Override
+		public void onFileNotFoundException(FileNotFoundException e, Object state) {
+		}
+
+		@Override
+		public void onMalformedURLException(MalformedURLException e, Object state) {
+		}
+
+		@Override
+		public void onFacebookError(FacebookError e, Object state) {
 		}
 	}
 }
