@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import org.androidannotations.api.BackgroundExecutor;
 import org.androidannotations.api.view.HasViews;
 import org.androidannotations.api.view.OnViewChangedListener;
 import org.androidannotations.api.view.OnViewChangedNotifier;
@@ -65,29 +63,8 @@ public final class MasonryGridFragment_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        column1 = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column1));
-        scrollView = ((ScrollView) hasViews.findViewById(ac.jejunu.photify.R.id.scrollView));
-        column0 = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column0));
-        columnContainer = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.column_container));
+        scrollContainer = ((LinearLayout) hasViews.findViewById(ac.jejunu.photify.R.id.scroll_container));
         afterViews();
-    }
-
-    @Override
-    public void recycleImages() {
-        BackgroundExecutor.execute(new BackgroundExecutor.Task("", 0, "") {
-
-
-            @Override
-            public void execute() {
-                try {
-                    MasonryGridFragment_.super.recycleImages();
-                } catch (Throwable e) {
-                    Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
-                }
-            }
-
-        }
-        );
     }
 
     public static class FragmentBuilder_ {

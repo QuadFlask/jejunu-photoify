@@ -6,8 +6,8 @@
 package ac.jejunu.photify.activity.fragment;
 
 import ac.jejunu.photify.R.layout;
+import ac.jejunu.photify.rest.ArticleCommandRestClient_;
 import ac.jejunu.photify.rest.MyRestClient_;
-import ac.jejunu.photify.rest.TestCommandRestClient_;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -55,8 +55,8 @@ public final class JsonTestFragment_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
+        articleCommandRestClient = new ArticleCommandRestClient_();
         myRestClient = new MyRestClient_();
-        testCommandRestClient = new TestCommandRestClient_();
     }
 
     @Override

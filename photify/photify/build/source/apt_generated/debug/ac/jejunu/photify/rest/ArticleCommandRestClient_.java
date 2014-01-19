@@ -5,6 +5,7 @@
 
 package ac.jejunu.photify.rest;
 
+import java.util.ArrayList;
 import java.util.List;
 import ac.jejunu.photify.command.ArticleCommand;
 import ac.jejunu.photify.entity.Article;
@@ -12,24 +13,31 @@ import ac.jejunu.photify.rest.java.util.List_Article;
 import org.androidannotations.api.rest.RestErrorHandler;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.client.ClientHttpRequestInterceptor;
+import org.springframework.http.converter.ByteArrayHttpMessageConverter;
 import org.springframework.http.converter.FormHttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-public final class TestCommandRestClient_
-    implements TestCommandRestClient
+public final class ArticleCommandRestClient_
+    implements ArticleCommandRestClient
 {
 
     private String rootUrl;
     private RestTemplate restTemplate;
     private RestErrorHandler restErrorHandler;
 
-    public TestCommandRestClient_() {
+    public ArticleCommandRestClient_() {
         rootUrl = "http://192.168.0.3:8080/";
         restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+        restTemplate.getMessageConverters().add(new ByteArrayHttpMessageConverter());
         restTemplate.getMessageConverters().add(new FormHttpMessageConverter());
         restTemplate.getMessageConverters().add(new GsonHttpMessageConverter());
+        restTemplate.setInterceptors(new ArrayList<ClientHttpRequestInterceptor>());
+        restTemplate.getInterceptors().add(new ArticleCommandInterceptor());
     }
 
     @Override
@@ -51,7 +59,7 @@ public final class TestCommandRestClient_
     public String writeArticle(Article article) {
         HttpEntity<Article> requestEntity = new HttpEntity<Article>(article);
         try {
-            return restTemplate.exchange(rootUrl.concat("/writeaticle.photo"), HttpMethod.POST, requestEntity, String.class).getBody();
+            return restTemplate.exchange(rootUrl.concat("/writearticle.photo"), HttpMethod.POST, requestEntity, String.class).getBody();
         } catch (RestClientException e) {
             if (restErrorHandler!= null) {
                 restErrorHandler.onRestClientExceptionThrown(e);

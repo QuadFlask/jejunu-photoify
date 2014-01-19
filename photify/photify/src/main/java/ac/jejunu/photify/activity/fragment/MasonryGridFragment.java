@@ -1,116 +1,110 @@
 package ac.jejunu.photify.activity.fragment;
 
-import android.annotation.TargetApi;
-import android.graphics.Bitmap;
-import android.graphics.Rect;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
+import android.widget.TextView;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import ac.jejunu.photify.R;
+import ac.jejunu.photify.view.MasonryGridView;
+import ac.jejunu.photify.view.OnScrollBottomListener;
 import ac.jejunu.photify.view.UrlImageView;
 
 @EFragment(R.layout.fragment_masonry)
-public class MasonryGridFragment extends Fragment {
+public class MasonryGridFragment extends Fragment implements OnScrollBottomListener {
 
-	@ViewById(R.id.column_container)
-	LinearLayout columnContainer;
-
-	@ViewById(R.id.scrollView)
-	ScrollView scrollView;
-
-	@ViewById(R.id.column0)
-	LinearLayout column0;
-
-	@ViewById(R.id.column1)
-	LinearLayout column1;
-
-	int col0Height, col1Height;
-
-	private ArrayList<ImageView> imageViewArrayList;
+	private MasonryGridView masonryGridView;
+	@ViewById(R.id.scroll_container)
+	LinearLayout scrollContainer;
 
 	@AfterViews
 	void afterViews() {
-		try {
-			imageViewArrayList = new ArrayList<ImageView>();
+		masonryGridView = new MasonryGridView(getActivity(), 2);
+		scrollContainer.addView(masonryGridView);
+		addSampleImages(32);
+		masonryGridView.addOnScrollBottomListener(this);
+	}
 
-			for (int i = 0; i < 32; i++) {
+	@Override
+	public void onScrollBottom(int diff) {
+		if (diff <= 200) {
+			Log.e("MasonryGridFragment", "scroll is bottom!");
+			addSampleImages(8);
+		}
+	}
+
+	private void addSampleImages(int count) {
+		try {
+			for (int i = 0; i < count; i++) {
 				int height = (int) (80 + Math.random() * 250);
-				ImageView sampleImageView = getSampleImageView(height);
-				imageViewArrayList.add(sampleImageView);
-				add(sampleImageView);
+				masonryGridView.addView(getSampleImageView(height));
 			}
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-
-		Timer timer = new Timer();
-//		timer.schedule(new TimerTask() {
-//			@Override
-//			public void run() {
-//				recycleImages();
-//			}
-//		}, 3 * 1000, 5 * 1000);
 	}
 
-	private void add(ImageView sampleImageView) {
-		if (col0Height <= col1Height) {
-			column0.addView(sampleImageView);
-			col0Height += sampleImageView.getLayoutParams().height;
+	private View getSampleImageView(int height) throws MalformedURLException {
+		return new GridItem(
+				getActivity(),
+				"https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Marker-Outside-Pink.png",
+				height,
+				"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c5.5.65.65/s56x56/374637_189230964497111_247316888_t.jpg",
+				"Flask" + height,
+				"contents..."
+		);
+	}
+}
 
-		} else {
-			column1.addView(sampleImageView);
-			col1Height += sampleImageView.getLayoutParams().height;
-		}
+class GridItem extends LinearLayout {
+	private View view;
+	private String photoUrl;
+	private String profilePhoto;
+	private String name;
+	private String contents;
+	private int defaultBackgroundColor = 0xffff00ff;
+	UrlImageView ivItemImage, ivProfilepic;
+
+	public GridItem(Context context, String photoUrl, int height, String profilePhoto, String name, String contents) throws MalformedURLException {
+		super(context);
+		this.photoUrl = photoUrl;
+		this.profilePhoto = profilePhoto;
+		this.name = name;
+		this.contents = contents;
+
+		LayoutInflater inflater = LayoutInflater.from(context);
+		view = inflater.inflate(R.layout.item, this);
+
+		ivItemImage = (UrlImageView) view.findViewById(R.id.item_image);
+		ivItemImage.setImageURL(new URL(photoUrl));
+		ivItemImage.setMaxWidth(220);
+		ivItemImage.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, height));
+		ivItemImage.setDefaultBackgroundColor(defaultBackgroundColor);
+
+		ivProfilepic = (UrlImageView) view.findViewById(R.id.iv_profilepic);
+		ivProfilepic.setImageURL(new URL(profilePhoto));
+		ivProfilepic.setDefaultBackgroundColor(0xffff00cc);
+
+		TextView tvName = (TextView) view.findViewById(R.id.tv_name);
+		tvName.setText(name);
+		TextView tvContents = (TextView) view.findViewById(R.id.tv_contents);
+		tvContents.setText(contents);
 	}
 
-	@Background
-	void recycleImages() {
-		Rect scrollBounds = new Rect();
-		Log.e("MasonryGridFragment", "recycleImages");
-		scrollView.getHitRect(scrollBounds);
-
-		for (ImageView imageView : imageViewArrayList) {
-			if (imageView.getLocalVisibleRect(scrollBounds)) {
-//				imageView.reload();
-			} else {
-				BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
-				if (drawable != null) {
-//				    Bitmap bitmap = drawable.getBitmap();
-//				    bitmap.recycle();
-//				    imageView.setVisibility(View.INVISIBLE);
-				}
-//				imageView.recycle();
-			}
-		}
+	@Override
+	public void setVisibility(int visibility) {
+		ivItemImage.setVisibility(visibility);
+		ivProfilepic.setVisibility(visibility);
 	}
-
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	private ImageView getSampleImageView(int height) throws MalformedURLException {
-		UrlImageView imgView = new UrlImageView(this.getActivity());
-		imgView.setImageURL(new URL("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-256.png"));
-
-		imgView.setMaxWidth(240);
-		imgView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, height));
-		return imgView;
-	}
-
 }
