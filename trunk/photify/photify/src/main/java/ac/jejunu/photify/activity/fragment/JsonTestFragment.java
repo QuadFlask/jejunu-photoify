@@ -1,8 +1,11 @@
 package ac.jejunu.photify.activity.fragment;
 
+import android.graphics.Bitmap;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.google.gson.Gson;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -10,14 +13,24 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 import org.androidannotations.annotations.rest.RestService;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONObject;
 
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 
 import ac.jejunu.photify.R;
-import ac.jejunu.photify.command.ArticleCommand;
 import ac.jejunu.photify.entity.Article;
 import ac.jejunu.photify.rest.MyRestClient;
-import ac.jejunu.photify.rest.TestCommandRestClient;
+import ac.jejunu.photify.rest.ArticleCommandRestClient;
 
 @EFragment(R.layout.fragment_main)
 public class JsonTestFragment extends Fragment {
@@ -29,7 +42,7 @@ public class JsonTestFragment extends Fragment {
 	MyRestClient myRestClient;
 
 	@RestService
-	TestCommandRestClient testCommandRestClient;
+	ArticleCommandRestClient articleCommandRestClient;
 
 	@AfterViews
 	void onBindComplete() {
@@ -65,16 +78,112 @@ public class JsonTestFragment extends Fragment {
 			appendData("writing, " + no);
 			appendData(" : " + article.toString());
 
-			String result = testCommandRestClient.writeArticle(article);
-			appendData(" // write result = " + result);
-			List<Article> articles = testCommandRestClient.getArticles(new ArticleCommand(2, 2));
+			postTest("http://192.168.0.3:8080/writearticle.photo", article);
 
-			for (Article a : articles) {
-				appendData(a.toString());
+//			String result = articleCommandRestClient.writeArticle(article);
+//			appendData(" // write result = " + result);
+//			List<Article> articles = articleCommandRestClient.getArticles(new ArticleCommand(2, 2));
+//
+//			for (Article a : articles) {
+//				appendData(a.toString());
+//			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public String post(String url, Article article) {
+		InputStream inputStream;
+		String result = "";
+		try {
+			// 1. create HttpClient
+			HttpClient httpclient = new DefaultHttpClient();
+
+			// 2. make POST request to the given URL
+			HttpPost httpPost = new HttpPost(url);
+
+			String json = "";
+
+			// 3. build jsonObject
+			JSONObject jsonObject = new JSONObject();
+			jsonObject.accumulate("articleid", article.getArticleid());
+			jsonObject.accumulate("title", article.getTitle());
+			jsonObject.accumulate("photoUrl", article.getPhotoUrl());
+
+			// 4. convert JSONObject to JSON to String
+			json = jsonObject.toString();
+
+			// ** Alternative way to convert Person object to JSON string usin Jackson Lib
+			// ObjectMapper mapper = new ObjectMapper();
+			// json = mapper.writeValueAsString(person);
+
+			// 5. set json to StringEntity
+			StringEntity se = new StringEntity(json);
+
+			// 6. set httpPost Entity
+			httpPost.setEntity(se);
+
+			// 7. Set some headers to inform server about the type of the content
+			httpPost.setHeader("Accept", "application/json");
+			httpPost.setHeader("Content-type", "application/json");
+
+			// 8. Execute POST request to the given URL
+			HttpResponse httpResponse = httpclient.execute(httpPost);
+
+			// 9. receive response as inputStream
+			inputStream = httpResponse.getEntity().getContent();
+
+			// 10. convert inputstream to string
+			if (inputStream != null)
+				result = convertInputStreamToString(inputStream);
+			else
+				result = "Did not work!";
+		} catch (Exception e) {
+			e.printStackTrace();
+			Log.e("InputStream", e.getLocalizedMessage());
+		}
+
+		// 11. return result
+		return result;
+	}
+
+	private String convertInputStreamToString(InputStream inputStream) throws IOException {
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+		String line = "";
+		String result = "";
+		while ((line = bufferedReader.readLine()) != null)
+			result += line;
+
+		inputStream.close();
+		return result;
+
+	}
+
+	Gson gson = new Gson();
+
+	void postTest(String url, Article article) {
+		try {
+			HttpClient httpClient = new DefaultHttpClient();
+
+			HttpPost postRequest = new HttpPost(url);
+
+			StringEntity se = new StringEntity(gson.toJson(article));
+			postRequest.setEntity(se);
+//			postRequest.setHeader("Accept", "application/json");
+//			postRequest.setHeader("Content-type", "application/json");
+
+			HttpResponse response = httpClient.execute(postRequest);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent(), "UTF-8"));
+			String sResponse;
+			StringBuilder s = new StringBuilder();
+
+			while ((sResponse = reader.readLine()) != null) {
+				s = s.append(sResponse);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 
 }

@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 import ac.jejunu.photify.R;
 import ac.jejunu.photify.activity.fragment.TestFragment;
@@ -39,6 +40,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 		// Set up the action bar.
 		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
 
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the activity.
@@ -74,7 +76,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
@@ -138,10 +139,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
 	public static class FragmentPlaceHolder {
 		private Fragment[] fragments = new Fragment[]{
 //				new PostFragment(),
-				new ac.jejunu.photify.activity.fragment.JsonTestFragment_(),
 				new ac.jejunu.photify.activity.fragment.MasonryGridFragment_(),
 				new ac.jejunu.photify.activity.fragment.FacebookLoginFragment_(),
-				new TestFragment(),
+				new ac.jejunu.photify.activity.fragment.JsonTestFragment_(),
+//				new TestFragment(),
 		};
 		private String[] titles = new String[]{
 				"TEST1",

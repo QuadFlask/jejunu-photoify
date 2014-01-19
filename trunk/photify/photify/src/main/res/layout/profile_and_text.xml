@@ -6,8 +6,8 @@
 	android:orientation="horizontal">
 	<!--profile pic-->
 	<ac.jejunu.photify.view.UrlImageView
-		android:layout_width="64dp"
-		android:layout_height="64dp"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
 		android:layout_gravity="center_vertical"
 		android:layout_marginRight="2dp"
 		android:scaleType="fitXY"
